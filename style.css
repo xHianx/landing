@@ -1762,3 +1762,32 @@ footer {
   border: 2px solid #ff4136;
   border-radius: 5px;
 }
+
+.video-container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  margin: 0; /* Elimina márgenes */
+  background-color: #f4f4f4; /* Color de fondo opcional */
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 900px; /* Tamaño máximo del video */
+  height: auto; /* Ajusta la altura automáticamente */
+  aspect-ratio: 16 / 9; /* Mantiene proporción de video */
+  border: none; /* Elimina borde del iframe */
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* Añade algo de espacio arriba y abajo */
+}
+
+iframe {
+  max-width: 100%; /* Asegura que el video sea responsivo */
+  border: none;
+}
