@@ -22,6 +22,8 @@ CSS STRUCTURE:
 2. GENERAL TYPOGRAPHY
 
 --------------------------------------------------------------*/
+
+
 body {
   --heading-font: "Marcellus", Roboto, sans-serif;
   --heading-font-weight: 400;
@@ -58,6 +60,42 @@ body {
   --bs-link-hover-color: #111;
   --bs-link-hover-color-rgb: 17, 17, 17;
 }
+
+/* Fondo de la barra de navegación */
+.navbar {
+  background-color: #E32017; /* Rojo */
+  border-bottom: 3px solid #FFC300; /* Amarillo para acento */
+}
+
+/* Estilo de los enlaces en la barra de navegación */
+.navbar .nav-link {
+  color: #FFFFFF; /* Blanco */
+  font-weight: bold;
+  text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+/* Hover en los enlaces */
+.navbar .nav-link:hover {
+  color: #FFC300; /* Amarillo */
+  text-decoration: underline;
+}
+
+/* Estilo para el enlace activo */
+.navbar .nav-link.active {
+  color: #000000; /* Negro */
+  background-color: #FFC300; /* Amarillo */
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+/* Estilo para el logo (opcional) */
+.navbar-brand {
+  color: #FFFFFF; /* Blanco */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #333333; /* Sombra ligera */
+}
+
 
 body {
   letter-spacing: 0.03rem;
@@ -281,6 +319,12 @@ a {
   align-items: center;
   justify-content: center;
   transition: height 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+/* Quitar las flechas de los elementos de navegación */
+.navbar .dropdown-toggle::after {
+  content: none !important; /* Quita la flecha generada por Bootstrap */
 }
 
 .preloader.loaded {
@@ -1539,4 +1583,182 @@ a.btn-link.text-light:after {
   background-position: center;
   background-size: cover;
   transition: transform .3s ease-out;
+}
+
+/* The Big Bang Theory Theme Styles */
+
+/* Body Background */
+body {
+  background-color: #FFFFFF; /* White */
+  color: #000000; /* Black */
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #FF0000; /* Red */
+  border-bottom: 3px solid #FFFF00; /* Yellow accent */
+}
+
+.navbar .nav-link {
+  color: #FFFFFF; /* White text */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: bold;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #FFFF00; /* Yellow text on hover/active */
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #FFFF00; /* Yellow */
+  color: #000000; /* Black text */
+  border-color: #000000; /* Black border */
+}
+
+.btn-primary:hover {
+  background-color: #000000; /* Black */
+  color: #FFFF00; /* Yellow text */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #FF0000; /* Red */
+  text-shadow: 1px 1px 2px #000000; /* Black shadow */
+}
+
+/* Links */
+a {
+  color: #FF0000; /* Red */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFFF00; /* Yellow */
+}
+
+/* Footer */
+footer {
+  position: relative; /* Asegura que no esté fijo */
+  bottom: auto;
+  width: 100%; /* Ocupa todo el ancho */
+  background-color: #6a2222; /* Rojo temático de The Big Bang Theory */
+  color: #FFFFFF; /* Texto blanco */
+  text-align: center; /* Centra el texto */
+  padding: 10px 0; /* Espaciado interno */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-logo {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.brand-description .description {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  margin: 0 auto;
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.contact-us {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.contact-us h3 {
+  font-size: 1.5rem;
+  color: #e10600; /* Rojo característico */
+  margin-bottom: 1rem;
+}
+
+.contact-us p a {
+  text-decoration: none;
+  color: #e10600;
+  font-weight: bold;
+}
+
+.contact-us p a:hover {
+  text-decoration: underline;
+}
+
+/* Section Titles */
+.section-title {
+  background-color: #FFFF00; /* Yellow */
+  color: #000000; /* Black */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Cards */
+.card {
+  border: 1px solid #FF0000; /* Red border */
+}
+
+.card-title {
+  color: #FF0000; /* Red */
+}
+
+.card:hover {
+  border-color: #FFFF00; /* Yellow on hover */
+}
+
+/* Customize Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FF0000; /* Red scrollbar */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #FFFF00; /* Yellow on hover */
+}
+
+#noticias h4 {
+  color: #ff4136;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.post-item {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.post-item .post-title a {
+  color: #ff4136;
+  text-decoration: none;
+}
+
+.post-item .post-title a:hover {
+  text-decoration: underline;
+  color: #c0392b;
+}
+
+.post-meta {
+  color: #2c3e50;
+}
+
+.post-grid-image {
+  border: 2px solid #ff4136;
+  border-radius: 5px;
 }
